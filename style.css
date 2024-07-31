@@ -1,0 +1,835 @@
+@font-face {
+  font-family:  Helvetica ;
+  src: url(./Assets/Fonts/Helvetica.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,body{
+height:100%;
+max-width:100%;
+}
+body{
+  overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+ background: linear-gradient(transparent , #31353c);
+ border-radius: 7px;
+}
+
+.cursor{
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #a0a0a0;
+  /* background-color: #c54424; */
+  position: fixed;
+  font-size: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+
+nav{
+  max-height: 15%;
+  width: 100%;
+  /* background-color: #f1efec; */
+  background-color: #EEEEEE;
+  /* background-color: #799f9b; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.9em;
+}
+
+.logo{
+  padding-top: 10px;
+  height: 115px;
+  
+}
+
+.navlinks ul{
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.navlinks ul li{
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+ul li a{
+  text-decoration: none;
+  color: #2a2828;
+  position: relative;
+  letter-spacing: 0.5px;
+  padding: 0 7px;
+}
+
+li a:after{
+  content: "";
+  position: absolute;
+  background-color: #222831;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -9px;
+  transition: 0.4s ease;
+}
+a:hover::after{
+  width: 100%;
+}
+
+a:hover{
+  color: #111;
+}
+
+.active{
+  color: #111;
+  font-weight: 500;
+}
+.active ::after{
+width: 100%;
+}
+
+.menu{
+  display: none;
+}
+.menu i{
+  font-size: 1.3rem;
+  /* display: none; */
+  color: #212121;
+}
+
+
+.section-1{
+  /* height: calc(100vh - 15%); */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: #222831;
+}
+
+.left{
+  height: 100%;
+  width: 50%;
+  color: #212121;
+  padding: 6rem 4rem;
+  /* background-color: rgba(255, 192, 203, 0.566); */
+}
+
+.left h1{
+  font-size: 4.4rem;
+  width: 82%;
+  line-height: 5.7rem;
+  /* background: red; */
+  font-family: "Libre Baskerville", serif;
+  color: #EEEEEE;
+  font-weight: 400;
+}
+
+.left h3{
+  font-size: 1.2rem;
+  padding-top: 15px;
+  font-family: "Inter", sans-serif;
+  width: 80%;
+  color: #EEEEEE;
+  font-weight: 400;
+}
+
+
+.right{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.video{
+  padding-top: 1rem;
+  height: 85%;
+  width: 90%;
+  position: relative;
+}
+.video video{
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.video i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(213, 206, 206, 0.393);
+  transform: translate(-50%, -50%);
+  /* Additional styling for the button */
+  padding: 20px;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.video i:hover{
+background: #fff;
+color: #111;
+}
+
+
+.seperator{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2.2em 0;
+height: 4vh;
+width:100%;
+/* background-color: firebrick; */
+background-color:#EEEEEE;
+}
+
+/* Section 2 css */
+
+.section-2{
+  height: 100vh;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+.section-2 .info-block-1{
+  height: 100%;
+  width: 100%;
+  /* background-color: mediumseagreen; */
+}
+
+.info-block-1 .part1{
+  height: 45%;
+  width: 100%;
+  /* background-color: goldenrod; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  gap: 1.5rem;
+}
+
+.part1 h2{
+  padding-top: 0.8em;
+  font-weight: 400;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+.part1 h2 span{
+  font-weight: 600;
+}
+.part1 p{
+  font-size: 1.1rem;
+  line-height: 2rem;
+  width: 90%;
+}
+
+.part2{
+  height: 55%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* background-color: cornflowerblue; */
+}
+.block{
+  width: 33%; 
+  /* height: 40%; */
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 0 1.5em;
+justify-content: center;
+  text-align: center;
+  gap: 0.8em;
+  /* background-color: red; */
+}
+
+.facility-icon{
+  font-size: 1.8rem;
+  padding: 1em;
+  border-radius: 50%;
+  /* background-color: red; */
+  color: #d65131;
+  border: 2px solid #d65131;
+}
+
+.block h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+/* Section-3 */
+
+.section-3{
+  height: 250%;
+  width: 100%;
+  background-color: #EEEEEE;
+  /* background-color: #31353c; */
+}
+
+.apartment-img{
+  height: 28%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./Assets/Villa/WhatsApp\ Image\ 2024-07-01\ at\ 1.08.54\ PM.jpeg);
+  /* display: table; */
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apartment-img h1{
+  color: #EEEEEE;
+  font-size: 2.5rem;
+  font-weight: 400;  
+  background-color:  #222831b5;
+  padding: 0.5em 2em;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 0.3rem;
+}
+
+.apartmentSection {
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3em;
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 100%;
+  /* background-color: #EEEEEE; */
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+
+.apartment {
+  /* color: #EEEEEE; */
+  padding: 0.5em;
+  border-radius: 5px;
+  height: 500px;
+  border: 1px solid #d6523198;
+  width: 380px;
+  /* background-color: #2a2828; */
+}
+
+.villa-img{
+  border-radius: 5px;
+  height: 50%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-1{
+  background-image: url(./Assets/Villa/Outerside/WhatsApp\ Image\ 2024-07-23\ at\ 11.19.54\ PM.jpeg);
+}
+.img-2{
+  background-image: url(./Assets/Villa/Outerside/WhatsApp\ Image\ 2024-07-23\ at\ 11.19.55\ PM\ \(1\).jpeg);
+}
+.img-3{
+  background-image: url(./Assets/Villa/Outerside/WhatsApp\ Image\ 2024-07-23\ at\ 11.19.55\ PM.jpeg);
+}
+.img-4{
+  background-image: url(./Assets/Villa/Outerside/WhatsApp\ Image\ 2024-07-23\ at\ 11.19.54\ PM\ \(2\).jpeg);
+}
+.img-5{
+  background-image: url(./Assets/Villa/Outerside/WhatsApp\ Image\ 2024-07-23\ at\ 11.19.52\ PM.jpeg);
+}
+.img-6{
+  background-image: url(./Assets/Villa/Outerside/WhatsApp\ Image\ 2024-07-23\ at\ 11.19.53\ PM.jpeg);
+}
+.villa-desc{
+  gap: 9px;
+  text-align: center;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: 45%;
+  width: 100%;
+}
+
+.villa-desc h1{
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.villa-desc p{
+  /* background-color: red; */
+  font-size: 0.95rem;
+  font-weight: 400;
+  width: 90%;
+}
+
+.villa-desc .book-btn{
+  margin-top: 8px;
+  font-weight: 600;
+  /* letter-spacing: 0.1rem; */
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 0.9em;
+  background-color: #d65131;
+  transition: 0.2s ease;
+  box-shadow: 1px 1px 2px #555555;
+}
+
+.villa-desc .book-btn:hover{
+  background-color: #c54424;
+}
+
+
+.about-us{
+  height: 120%;
+  /* background-color: red; */
+  background-color: #EEEEEE;
+  display: flex;
+}
+
+.about-us .abtus-left{ 
+  padding:  1em 1.5em;
+  width: 42%;
+  height: 100%;
+  /* background-color: blue; */
+}
+.abtus-left img{
+  margin-top:  3em;
+  width: 100%;
+}
+
+.abtus-right{
+  width: 58%;
+  /* background-color: rgb(117, 91, 143); */
+  height: 100%;
+  padding: 0 3em;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.abtus-right h3{
+  /* padding-top: 1em; */
+  margin-top: 3.4em;
+  /* padding-left: 0.5em; */
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #d65131;
+  text-transform: uppercase;
+}
+
+.abtus-right h1{
+  line-height: 1.4em;
+  text-transform: capitalize;
+  font-size: 3.25rem;
+  font-weight: 500;
+  /* white-space: nowrap; */
+  font-family: "Libre Baskerville", serif;
+}
+
+.abtus-right p{
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.counterItem{
+  margin: 1em 0;
+  height: 25vh ;
+  width: 90%;
+  /* background: red; */
+  display: flex;
+  gap: 1em;
+}
+
+.counterItem .item{
+  height: 90%;
+  width: 42%;
+  /* background-color: olive; */
+  color: white;
+  /* text-align: center; */
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item h2{
+  font-size: 2.4rem;
+  font-weight: 600;
+  /* height: 30px; */
+  /* background-color: red; */
+}
+.item p{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.ctr1{
+  background-color: #222831;
+}
+.ctr2{
+  background-color: #222831;
+}
+
+.section-5{
+  /* background-color: #222831; */
+  background-image: url(./Assets/Images/sofaImage.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.section-5 .overlay{
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(19, 17, 17, 0.653);
+} 
+
+.offerInfo{
+  height: 90%;
+  width: 90%;
+  /* background-color: hotpink; */
+  margin: 0 auto;
+  text-align: center;
+  color: #EEEEEE;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 1.2em;
+}
+
+.offerInfo h2{
+  padding-top: 4.2em;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+color: #E99C61;
+}
+
+.offerInfo p{
+  /* background-color: red; */
+  line-height: 1.3em;
+  text-transform: capitalize;
+  margin: 0 auto;
+  width: 98%;
+  font-size: 3.2rem;
+  font-family: "Libre Baskerville", serif;
+}
+
+@media (max-width:750px) {
+  body{
+    overflow-x: hidden;
+  }
+  nav{
+    padding-left: 10px;
+  }
+  .logo{
+  height: 80px;
+  }
+  nav ul{  
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: #EEEEEE;
+    gap: 0;
+    overflow: hidden;
+    z-index: 1;
+  }
+  nav ul li{
+    padding: 5px;
+    
+  }
+
+  .menu{
+    display: block;
+  }
+  .menu-list{
+    transition: all 0.3s ease;
+  }
+
+  .cursor{
+    display: none;
+  }
+
+  .section-1{
+    flex-direction: column;
+    height: 90vh;
+  }
+  .section-1 .left{
+    margin-top: 3em;
+    width: 100%;
+    max-height: 40%;
+    padding: 0;
+    text-align: center;
+    /* background-color: midnightblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+  }
+    .left h1{
+      padding: 0 1.2rem;
+      line-height: 3.4rem;
+      text-align: center;
+      font-size: 2.2rem;
+      min-width: 100%;
+      /* background-color: purple; */
+    }
+    .left h3{
+      /* background-color: green; */
+      font-size: 1rem;
+      width: 100%;
+      padding: 0 1.2rem;
+      line-height: 1.4rem;
+    }
+
+
+  .section-1 .right{
+    width: 100%;
+    height: 60%;
+    /* background-color: crimson; */
+    align-items: center;
+    justify-content: center;
+    align-items:flex-start;
+  }
+   .right .video{
+    margin-top: 1em;
+    width: 90%;
+    max-height: 90%;
+  
+   }
+   .video video{
+    border-radius: 0;
+   }
+   .video i{
+    font-size: 2em;
+   }
+
+   /* Section-2 */
+
+.info-block-1 .part1 h2{
+font-size: 1.6rem;
+}
+
+.info-block-1 .part1 p{
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.info-block-1 .facility-icon{
+  font-size: 1.4rem;
+}
+
+.info-block-1 .part2 h3{
+  font-size: 1.1rem;
+}
+.info-block-1 .part2 p{
+  font-size: 0.9rem;
+}
+
+
+.section-2{
+width: 100%;
+height: auto;
+}
+.section-2 .part2{
+  flex-direction: column;
+  width: 100%;
+}
+
+.part2 .block{
+  padding: 2em 1em;
+  display: flex;
+  width: 100%;
+}
+
+
+.section-3{
+  height: 385vh;
+  /* background-color: teal; */
+}
+.section-3 .apartment-img{
+  height: 10%;
+  width: 100%;
+}
+
+.apartment-img h1{
+  font-size: 1.5rem;
+}
+
+.apartmentSection {
+  /* padding: 0; */
+  justify-content: center;
+  align-items: center;
+  gap: 0.8em;
+  margin: 0 auto;
+  margin-top: 0.9em;
+  width: 100%;
+  /* background-color: #EEEEEE; */
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.apartment{
+  /* margin-top: 5px; */
+/* height: 400px;   */
+padding: 0.3em;
+height: 55vh;
+width: 90%;
+row-gap: 5px;
+}
+.villa-desc {
+  gap: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.villa-img{
+  height: 48%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.villa-desc h1{
+  margin-top: 1em;
+  font-size: 1.2rem;
+}
+
+.villa-desc p{
+  width: 95%;
+  font-size: 0.85rem;
+}
+
+.villa-desc .book-btn{
+  /* margin-top: 5px; */
+  font-weight: 600;
+  /* letter-spacing: 0.1rem; */
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 0.7em;
+  background-color: #d65131;
+  transition: 0.2s ease;
+  box-shadow: 1px 1px 2px #555555;
+  /* margin-bottom: 5px; */
+  padding-bottom: 5px;
+}
+
+/* section-4 */
+
+.about-us{
+  flex-direction: column;
+  /* background-color: pink; */
+  height: 160%;
+}
+
+.about-us .abtus-left{
+  /* background-color: red; */
+  height: 42%;
+  /* padding: 1em 1em; */
+  margin: 0;
+  width: 100%;
+}
+
+.abtus-left img{
+  margin-top: 0;
+  width: 100%;
+  padding: 0;
+  /* height: 100%; */
+  margin-bottom: 2em;
+}
+
+.abtus-right{
+  height: 58%;
+  width: 100%;
+  /* padding-top: 1em; */
+  gap: 0.7em;
+  /* background-color: rosybrown; */
+  text-align: center;
+  padding: 0 1.5em;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.abtus-right h3{
+  /* margin-top: 1em; */
+  font-size: 1.4rem;
+}
+.abtus-right h1{
+  width: 100%;
+  font-size: 2.2rem;
+}
+
+.abtus-right h3{
+  margin: 0;
+}
+.abtus-right p{
+  font-size: 1rem;
+  hyphens: auto;
+  /* white-space: nowrap; */
+}
+
+
+.counterItem{
+  margin: 0.8em 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: mediumseagreen; */
+}
+.counterItem .item{
+  height: 80%;
+  width: 100%;
+}
+}
+
