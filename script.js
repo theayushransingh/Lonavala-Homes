@@ -115,3 +115,34 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".ctr2 h2").setAttribute("data-target", 100); // Example target value
   animateCounters();
 });
+
+const laptopScreen = ()=>{
+  gsap.from(".downArrow .arrow",{
+    y: -55,
+    duration:0.5,
+    // delay:2,
+    yoyo:true,
+    repeat:-1
+  })
+}
+const phoneAnimation = ()=>{
+  gsap.from(".downArrow .arrow",{
+    y: -60,
+    duration:0.5,
+    // delay:2,
+    yoyo:true,
+    repeat:-1
+  })
+}
+
+const applyAnimations = () => {
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    // Screen width is less than or equal to 767px (phone)
+    phoneAnimation();
+  } else {
+    // Screen width is greater than 767px (laptop/desktop)
+    laptopScreen();
+  }
+};
+
+applyAnimations();
