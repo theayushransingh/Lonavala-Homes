@@ -1,4 +1,26 @@
 
+
+document.addEventListener("DOMContentLoaded",()=>{
+  const links = document.querySelectorAll(".menu-list a, .apartment a,.footerlinks a")
+  console.log(links);
+  
+  for (const link of links) {
+    link.addEventListener("click",function(e){
+    e.preventDefault();
+    const targetid = this.getAttribute("href").substring(1);
+    console.log(targetid);
+    const targetElement = document.getElementById(targetid);
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth'
+  });
+      
+    })
+  }
+
+})
+
+
 let mm = gsap.matchMedia();
 mm.add("max-width: 900px", () => {
     gsap.from(".section-2 .info-block-1 .part2 .block",{
@@ -18,9 +40,7 @@ const cursor = document.querySelector(".cursor");
 const vidPlayBtn = document.querySelector(".vidPlay");
 let Video = document.querySelector(".myVideo");
 
-let vidPlaying = Video.pause();
-
- menuList.style.maxHeight = "0px";
+menuList.style.maxHeight = "0px";
 
  document.querySelector(".menubar").addEventListener("click",()=>{
     if(menuList.style.maxHeight == "0px"){
@@ -39,21 +59,6 @@ body.addEventListener("mousemove",(event)=>{
     })
 })
 
-vidPlayBtn.addEventListener("click",(e)=>{
-    if(Video.paused)
-    {
-        Video.play();
-        vidPlayBtn.style.display = "none"
-    }
-})
-Video.addEventListener("click",(e)=>{
-    if(Video.played)
-    {
-        Video.pause();
-        vidPlayBtn.style.display = "block"
-
-    }
-})
 
 gsap.from(".video",{
     duration: 1.2,
@@ -146,3 +151,45 @@ const applyAnimations = () => {
 };
 
 applyAnimations();
+
+
+
+document.getElementById('form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting the default way
+
+  // Get the form values
+  const name = document.querySelector('#user-name').value;
+  const email = document.querySelector('#user-email').value;
+  const phone = document.querySelector('#user-number').value;
+  const arrivaldate = document.querySelector('#arrivalDate').value;
+  const departuredate = document.querySelector('#departureDate').value;
+  const adult = document.querySelector('#adult').value;
+  const children = document.querySelector('#children').value;
+  const message = document.querySelector('#user-msg').value;
+
+  console.log(arrivalDate);
+
+  // Create an email template params object for booking request
+  const templateParams = {
+      name: name,
+      email: email,
+      phone: phone,
+      arrivaldate: arrivaldate,
+      departuredate: departuredate,
+      adult: adult,
+      children: children,
+      message: message
+  };
+
+  // Send the booking request email using EmailJS
+  emailjs.send('service_prs28se', 'template_pajfvri', templateParams)
+      .then(function(response) {
+          console.log('Booking request sent successfully!', response.status, response.text);
+          alert('Your booking request has been sent successfully!');
+          document.getElementById('form').reset();
+      }, function(error) {
+          console.log('Failed to send booking request.', error);
+          alert('Failed to send your booking request. Please try again.');
+      });
+});
+

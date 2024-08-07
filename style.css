@@ -193,6 +193,7 @@ width: 100%;
   color: #fff;
   cursor: pointer;
   transition: 0.3s ease;
+  display: none;
 }
 .video i:hover{
 background: #fff;
@@ -575,8 +576,6 @@ text-transform: uppercase;
   margin-top: 3em;
 }
 
-
-
 .downArrow a{
   text-decoration: none;
   color: #EEEEEE;
@@ -596,6 +595,409 @@ text-transform: uppercase;
 .arrow{
   font-size: 1.9rem;
   font-weight: 900;
+}
+
+.section-7{
+  /* background-color: #222831; */
+  /* background-color: #22283188; */
+    height: 130vh;
+    width: 100%;
+}
+
+.Contact-part1{
+  height: 63%;
+  /* background-color: #2e2e2e; */
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.FormContainer {
+  height: 95%;
+  width: 85%;
+  background: rgba(255, 255, 255, 0.184);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(40px); /* For Safari support */
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.FormContainer h1{
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  padding-bottom: 0.5em;
+  font-family: "Libre Baskerville", serif;
+}
+
+.Form{
+margin-top: 1em;
+height: 80%;
+width: 95%;
+margin: 0 auto;
+}
+
+#form{
+/* background-color: red; */
+color: #020202;
+  padding: 3em 1.5em;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  display: flex;
+}
+
+.personalDetail{
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+}
+
+
+
+.inputBox{
+  position: relative;
+  width: 110%;
+  height: 50%;
+  border-bottom: 2px solid #000000;
+}
+.inputBox label{
+  position: absolute;
+  top: 45%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+
+.inputBox input:focus~label,
+.inputBox input:valid~label {
+  top:-7px
+}
+
+.inputBox input{
+  width: 100%;
+  height: 100%;
+  /* padding: 1em; */
+  color: rgb(0, 0, 0);
+  background: none;
+  border: none;
+  outline: none;
+  /* background-color: red; */
+}
+
+.inputBox .icon{
+  position: absolute;
+  right: 8px;
+  bottom: 0px;
+  font-size: 1.2em;
+}
+
+
+.dateDetails{
+  padding-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+  /* background-color: red; */
+}
+
+.dateinput{
+  padding-top: 0.4em;
+  width: 110%;
+  height: 50%;
+  position: relative;
+  border-bottom: 2px solid #000000;
+
+}
+
+.dateinput label{
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.dateinput input{
+  width: 100%;
+  height: 100%;
+  /* padding: 1em; */
+  color: rgb(0, 0, 0);
+  background: none;
+  border: none;
+  
+  outline: none;
+  /* background-color: red; */
+}
+
+.input-field{
+  width: 100%;
+  padding-left: 5px; /* Adjust to make room for the logo */
+  padding-right: 30px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1em;
+}
+
+.stayDetails{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1.5em;
+}
+
+
+.personCount{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.personCount select{
+  padding: 1em;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  /* outline: none; */
+}
+.personCount select option{
+  background-color: transparent;
+  color: black;
+}
+
+
+.Form button{
+  position: absolute;
+  bottom: 6%;
+  right: 42%;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 1px 1px 4px rgb(48, 48, 48);
+  outline: none;
+  border: none;
+  background-color: #111;
+  color: white;
+}
+
+.Form button:hover{
+  background-color: #ec5c37;
+  color: white;
+}
+
+
+::-webkit-calendar-picker-indicator{
+background-color: #EEEEEE;
+}
+
+.Contact-part2{
+  height: 37%;
+  /* background-color: pink; */
+}
+
+.Contact-part2 .ourInfo{
+  height: 80%;
+  /* background-color: #111; */
+  background-image: url(./Assets/Images/vecteezy_white-ornament-islamic-pattern-background_7152272.jpg);
+  /* background-image: url(./Assets/Images/vecteezy_gradient-islamic-pattern-background_.jpg); */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+}
+
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #111111bf;
+}
+
+.contactFooter{
+  height: 20%;
+  background-color: #000000;
+}
+
+
+.Contact-part2 .mapSection{
+  width: 70%;  
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 7em;
+  position: relative;
+}
+
+.Contact-part2 .addressSection{
+  width: 30%;
+  height: 100%;
+  background-color: #00000052;
+}
+
+.cHeading{
+  padding-top: 0.5em;
+/* left: 1%; */
+  /* position: absolute; */
+  z-index: 1;
+  padding-left: 1em;
+}
+
+.cHeading h1, .cHeading span{
+  font-family: "Tangerine", cursive;
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 400;
+  border-bottom: 1px solid white;
+  
+}
+
+.cHeading span{
+  font-size: 5rem;
+  font-weight: 900;
+  color: #ff653f;
+  letter-spacing: 0.2rem;
+}
+
+.map{
+  padding-top: 1.2em;
+  z-index: 1;
+}
+iframe{
+  /* width: 100%; */
+  border-radius: 10px;
+  height: 200px;
+  width: 350px;
+  
+}
+
+.socialHandles {
+  z-index: 1;
+  position: absolute;
+  right: 5%;
+  bottom: 40%;
+  display: flex;
+  gap: 1em;
+}
+
+.socialHandles a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;  /* Ensure equal width and height */
+  height: 2.5rem;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.2s linear;
+}
+
+.socialHandles a:hover{
+  background: #ff653f;
+  color: white;
+}
+
+.copyRight{
+  padding-top: 1.6em;
+  color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6em;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+}
+
+.footerlinks{
+  display: flex;
+  gap: 0.7em;
+}
+
+.copyRight p span{
+  font-weight: 600;
+  color: white;
+}
+
+.footerlinks a{
+  text-decoration: none;
+  color: #EEEEEE;
+  transition: 0.2s ease;
+}
+
+.footerlinks a:hover{
+  color: gray;
+
+}
+
+.devlopedby a{
+text-decoration: none;
+color: #EEEEEE;
+transition: 0.2s ease;
+}
+
+.devlopedby a:hover{
+  color: gray;
+}
+
+.addressSection{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 1;
+  padding-top: 3em;
+  padding-left: 2em;
+}
+
+.phoneEmail{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  padding-bottom: 2em;
+}
+
+.phoneEmail h3{
+  font-weight: 600;
+}
+
+.phoneEmail a{
+  text-decoration: none;
+  font-size: 0.84rem;
+  letter-spacing: 0.1rem;
+  color: #EEEEEE;
+}
+.phoneEmail a:hover{
+  text-decoration: underline;
+}
+
+.locationAdress{
+  width: 50%;
+}
+
+.locationAdress p{
+  font-size: 0.9rem;
 }
 
 @media (max-width:750px) {
@@ -871,7 +1273,7 @@ row-gap: 5px;
 
 
 .section-6{
-  height: 590px;
+  height: 670px;
 }
 .offerText{
   top:15%;
@@ -905,6 +1307,185 @@ row-gap: 5px;
   padding: 0.6em 0.5em;
 }
 
+.section-7{
+  height: 140vh;
+}
+
+.Contact-part1{
+  height: 70%;
+  max-width: 900px;
+  align-items: center;
+
+  padding-top: 2em;
+}
+
+.Contact-part2{
+  height: 30%;
+}
+
+.FormContainer{
+  height: 670px;
+  width: 97%;
+  padding: 15px;
+  padding: 0.5em 0.7em;
+}
+
+.FormContainer h1{
+  /* padding-left: 0.8em; */
+  padding: 0.3em 1em;
+  /* background-color: red; */
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.Form{
+  height: 90%;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  overflow: hidden;
+}
+.personalDetail{
+  padding: 1em 0;
+  width: 90%;
+  gap: 2.5em;
+}
+
+.personalDetail .inputBox{
+  width: 100%;
+}
+.stayDetails{
+  width: 83%;
+  gap: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.dateDetails{
+  gap: 2.5em;
+}
+
+#form{
+  padding: 1em;
+  margin: 0 auto;
+  flex-direction: column;
+  /* justify-content: ; */
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2em;
+}
+
+.Form button{
+ position: static;
+}
+
+.queryMsg .inputBox{
+height: 30px;
+}
+
+
+.Contact-part2{
+  height: 600px;
+  width: 100%;
+}
+
+.ourInfo{
+  flex-direction: column;
+
+}
+
+
+.Contact-part2 .ourInfo{
+  height: 90%;
+}
+
+.Contact-part2 .mapSection{
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.cHeading{
+  text-align: center;
+  padding-left: 0;
+  /* border: none; */
+}
+
+.cHeading h1,.cHeading span{
+  border-bottom: none;
+ 
+}
+
+.cHeading span{
+  color: #EEEEEE;
+}
+.socialHandles{
+  position: static;
+}
+
+.map{
+  padding-top: 0.2em;
+  margin: 0 auto;
+}
+
+iframe{
+  height: 170px;
+  width: 350px;
+}
+
+.socialHandles{
+  margin: 0  auto;
+  gap: 0.6em;
+
+}
+
+.Contact-part2 .addressSection{
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  padding-top: 1.5em;
+  padding-left: 0;
+}
+
+.phoneEmail{
+  padding-bottom: 1.2em;
+  gap: 0.5em;
+}
+
+.locationAdress{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.locationAdress p{
+  text-align: center;
+}
+
+
+.contactFooter{
+  height: 10%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.copyRight{
+  align-items: center;
+  gap: 0.9em;
+}
+.copyRight p{
+  font-size: 0.6rem;
+  padding-top: 0.2em;
+}
+.footerlinks{
+  display: none;
+}
+
+.devlopedby p a{
+  text-decoration: underline;
+}
+
+.addressSection a{
+  text-decoration: underline;
+}
 
 }
 

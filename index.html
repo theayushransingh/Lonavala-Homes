@@ -16,8 +16,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "mCBZ3RAyCNKPDoKV-",
+      });
+   })();
+</script>
 </head>
 
 <body>
@@ -26,24 +39,24 @@
         <img src="./Assets/Logos/Lonavala holiday homes_transparent (1).png" alt="" class="logo">
         <div class="navlinks">
             <ul class="menu-list">
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Villas</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#villa">Villas</a></li>
+              <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
         <div class="menu">
             <i class="ri-menu-line menubar" ></i>
         </div>
     </nav>
-    <section class="section-1">
+    <section class="section-1 " id="home">
         <div class="left">
             <h1>Welcome To Lonavala Holiday Homes</h1>
             <h3>Experience celestial comfort and divine luxury at our Villas</h3>
         </div>
         <div class="right">
             <div class=" video">
-                <video src="./Assets/Videos/VN20240710_235725.mp4"  muted loop class="myVideo"></video>
+                <video src="./Assets/Videos/VN20240710_235725.mp4"  muted loop class="myVideo" autoplay> </video>
                 <i class="ri-play-fill vidPlay"></i>
             </div>
         </div>
@@ -76,107 +89,216 @@
             </div>
         </div>
     </section>
-<section class="section-3">
-    <div class="apartment-img">
-        <h1>Apartments</h1>
-    </div>    
-    <div class="apartmentSection">
-        <div class="apartment">  
-            <div class="villa-img img-4">
-                <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
+    <section class="section-3" id="villa">
+        <div class="apartment-img">
+            <h1>Apartments</h1>
+        </div>    
+        <div class="apartmentSection" >
+            <div class="apartment">  
+                <div class="villa-img img-4">
+                    <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
+                </div>
+                <div class="villa-desc">
+                    <h1>3BHK Farmhouse</h1>
+                    <p>Enjoy a peaceful stay 3 km from the market. Private villa with pool, mountain views, yard, BBQ, bonfire, kitchen, Wi-Fi, smart TV, indoor/outdoor games, garden, and parking.</p>
+                    <a href="#contact-part2" class="book-btn">Book Now</a>
+                </div>
             </div>
-            <div class="villa-desc">
-                <h1>3BHK Farmhouse</h1>
-                <p>Enjoy a peaceful stay 3 km from the market. Private villa with pool, mountain views, yard, BBQ, bonfire, kitchen, Wi-Fi, smart TV, indoor/outdoor games, garden, and parking.</p>
-                <a href="" class="book-btn">Book Now</a>
-            </div>
-        </div>
-        <div class="apartment">  
-            <div class="villa-img img-1">
+            <div class="apartment">  
+                <div class="villa-img img-1">
 
+                </div>
+                <div class="villa-desc">
+                    <h1>4BHK Luxury Villa</h1>
+                    <p>Experience luxury in a fully furnished 4BHK villa with AC bedrooms, private pool, smart TV, indoor games, and more. Perfect for up to 15 guests. Check-in 1:00 PM, check-out 11:00 AM</p>
+                    <a href="#contact-part2" class="book-btn">Book Now</a>
+                </div>
             </div>
-            <div class="villa-desc">
-                <h1>4BHK Luxury Villa</h1>
-                <p>Experience luxury in a fully furnished 4BHK villa with AC bedrooms, private pool, smart TV, indoor games, and more. Perfect for up to 15 guests. Check-in 1:00 PM, check-out 11:00 AM</p>
-                <a href="" class="book-btn">Book Now</a>
+            <div class="apartment">  
+                <div class="villa-img img-2">
+                    <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
+                </div>
+                <div class="villa-desc">
+                    <h1>4 BHK Majestic Villa</h1>
+                    <p>Indulge in comfort at a spacious 4BHK villa featuring air-conditioned bedrooms, a private pool, smart TV, indoor games, and more. Ideal for up to 15 guests. Check-in at 1:00 PM, check-out at 11:00 AM</p>
+                    <a href="#contact-part2" class="book-btn">Book Now</a>
+                </div>
             </div>
-        </div>
-        <div class="apartment">  
-            <div class="villa-img img-2">
-                <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
+            <div class="apartment">  
+                <div class="villa-img img-3">
+                    <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
+                </div>
+                <div class="villa-desc">
+                    <h1>Serene 3BHK Villa</h1>
+                    <p>Escape to our serene 3-bedroom villa with a private pool, AC bedrooms, and a fully-equipped kitchen. Ideal for families and friends seeking a peaceful and relaxing retreat.</p>
+                    <a href="#contact-part2" class="book-btn">Book Now</a>
+                </div>
             </div>
-            <div class="villa-desc">
-                <h1>4 BHK Majestic Villa</h1>
-                <p>Indulge in comfort at a spacious 4BHK villa featuring air-conditioned bedrooms, a private pool, smart TV, indoor games, and more. Ideal for up to 15 guests. Check-in at 1:00 PM, check-out at 11:00 AM</p>
-                <a href="" class="book-btn">Book Now</a>
+            <div class="apartment">  
+                <div class="villa-img img-5">
+                    <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
+                </div>
+                <div class="villa-desc">
+                    <h1>Luxurious 5 BHK </h1>
+                    <p>Experience luxury in a fully furnished 5BHK villa with AC bedrooms, private pool, smart TV, indoor games, and more. Perfect for up to 15 guests. Check-in 1:00 PM, check-out 11:00 AM</p>
+                    <a href="#contact-part2" class="book-btn">Book Now</a>
+                </div>
             </div>
-        </div>
-        <div class="apartment">  
-            <div class="villa-img img-3">
-                <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
-            </div>
-            <div class="villa-desc">
-                <h1>Serene 3BHK Villa</h1>
-                <p>Escape to our serene 3-bedroom villa with a private pool, AC bedrooms, and a fully-equipped kitchen. Ideal for families and friends seeking a peaceful and relaxing retreat.</p>
-                <a href="" class="book-btn">Book Now</a>
-            </div>
-        </div>
-        <div class="apartment">  
-            <div class="villa-img img-5">
-                <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
-            </div>
-            <div class="villa-desc">
-                <h1>Luxurious 5 BHK </h1>
-                <p>Experience luxury in a fully furnished 5BHK villa with AC bedrooms, private pool, smart TV, indoor games, and more. Perfect for up to 15 guests. Check-in 1:00 PM, check-out 11:00 AM</p>
-                <a href="" class="book-btn">Book Now</a>
-            </div>
-        </div>
-        <div class="apartment">  
-            <div class="villa-img img-6">
-                <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
-            </div>
-            <div class="villa-desc">
-                <h1>4BHK Luxury Villa</h1>
-                <p>Enjoy a 4BHK villa with 3 AC bedrooms, private pool, smart TV, music system, and indoor games. Perfect for 15 guests. Includes kitchen, fridge, and barbeque. Check-in 1:00 PM, check-out 11:00 AM.</p>
-                <a href="" class="book-btn">Book Now</a>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-<section class="section-4 about-us">
-    <div class="abtus-left">
-        <img src="./Assets/Images/composition-of-cozy-living-room-interior-design-4BEEY6U.png" alt="">
-    </div>
-    <div class="abtus-right">
-        <h3>About Us</h3>
-        <h1>Discover Tranquil Luxury at Lonavala Homes</h1>
-        <p>Discover the essence of Lonavala Holiday Homes, where refined luxury meets timeless elegance. Our commitment to exceptional quality and personalized service promises an unforgettable stay. Explore our dedication to crafting memorable experiences and creating moments you'll cherish forever.</p>
-        <div class="counterItem">
-            <div class="item ctr1">
-                <h2>0+</h2>
-                <p> Luxury Rooms</p>
-            </div>
-            <div class="item ctr2">
-                <h2>0+</h2>
-                <p>Happy Customers</p>
+            <div class="apartment">  
+                <div class="villa-img img-6">
+                    <!-- <img src="./Assets/Villa/WhatsApp Image 2024-07-01 at 1.08.05 PM (2).jpeg" alt=""> -->
+                </div>
+                <div class="villa-desc">
+                    <h1>4BHK Luxury Villa</h1>
+                    <p>Enjoy a 4BHK villa with 3 AC bedrooms, private pool, smart TV, music system, and indoor games. Perfect for 15 guests. Includes kitchen, fridge, and barbeque. Check-in 1:00 PM, check-out 11:00 AM.</p>
+                    <a href="#contact-part2" class="book-btn">Book Now</a>
+                </div>
             </div>
         </div>
     </div>
-</section>
-    <section class="section-6 offerSection" >
-        <div class="overlay"></div>
-            <div class="offerText">
-                <h3>Exclusive offer just for you</h3>
-                <p>Make your weekdays special with <span>50%</span> off at Lonavala Holiday Homes. Experience luxury at a fraction of the cost</p>
-               <div class="downArrow">
-                <i class="ri-arrow-down-line arrow"></i>
-             <a href="/">Book Now</a>
-               </div>
-            </div>
     </section>
+    <section class="section-4 about-us" id="about">
+        <div class="abtus-left">
+            <img src="./Assets/Images/composition-of-cozy-living-room-interior-design-4BEEY6U.png" alt="">
+        </div>
+        <div class="abtus-right">
+            <h3>About Us</h3>
+            <h1>Discover Tranquil Luxury at Lonavala Homes</h1>
+            <p>Discover the essence of Lonavala Holiday Homes, where refined luxury meets timeless elegance. Our commitment to exceptional quality and personalized service promises an unforgettable stay. Explore our dedication to crafting memorable experiences and creating moments you'll cherish forever.</p>
+            <div class="counterItem">
+                <div class="item ctr1">
+                    <h2>0+</h2>
+                    <p> Luxury Rooms</p>
+                </div>
+                <div class="item ctr2">
+                    <h2>0+</h2>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-6 offerSection" >
+            <div class="overlay"></div>
+                <div class="offerText">
+                    <h3>Exclusive offer just for you</h3>
+                    <p>Make your weekdays special with <span>50%</span> off at Lonavala Holiday Homes. Experience luxury at a fraction of the cost</p>
+                <div class="downArrow">
+                    <i class="ri-arrow-down-line arrow"></i>
+                <a href="#contact-part2">Book Now</a>
+                </div>
+                </div>
+    </section>
+    <section class=" section-7 Contactus ">
+        <div class="Contact-part1" id="contact-part2">
+            <div class="FormContainer">
+                <h1>Book Your Stay</h1>
+                <div class="Form">
+                    <form action="#" id="form">
+                        <div class="personalDetail">
+                            <div class="inputBox">
+                                <span class="icon"><i class="ri-user-fill"></i></span>
+                                <input type="text" required class="input-field" id="user-name">
+                                <label for=""> Your Name</label>
+                            </div>
+                            <div class="inputBox">
+                                <span class="icon"><i class="ri-mail-fill"></i></span>
+                                <input type="text" required class="input-field" id="user-email">
+                                <label for="">Email Address</label>
+                            </div>
+                            <div class="inputBox">
+                                <span class="icon"><i class="ri-phone-fill"></i></span>
+                                <input type="text" required class="input-field" id="user-number">
+                                <label for="">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="stayDetails">
+                            <div class="dateDetails">
+                                <div class="dateinput">
+                                    <input type="date" required id="arrivalDate">
+                                    <label for="">Arrival Date</label>
+                                </div>
+                                <div class="dateinput">
+                                    <input type="date" required id="departureDate">
+                                    <label for="">Departure Date</label>
+                                </div>
+                            </div>
+                            <div class="personCount">
+                                <select name="Adults" id="adult" required>
+                                    <option value="1">1 Adult</option>
+                                    <option value="2">2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                    <option value="4">4 Adults</option>
+                                    <option value="5">5 Adults</option>
+                                </select>
+                                <select name="Children" id="children" required>
+                                    <option value="0">0 Children</option>
+                                    <option value="1">1 Child</option>
+                                    <option value="2">2 Children</option>
+                                    <option value="3">3 Children</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="queryMsg">
+                            <div class="inputBox">
+                                <input type="text" class="input-field" id="user-msg">
+                                <label for="">Message</label>
+                            </div>
+                        </div>
+                        <button class="formbtn" data-text="Send Booking Request">Send Booking Request</button>
+                    </form>
+                </div>
+            </div> 
+        </div>
+        <div class="Contact-part2" id="contact">
+            <div class="ourInfo">
+                <div class="overlay"></div>
+                <div class="mapSection">
+                    <div class="cHeading">
+                        <h1><Span>C</Span>ontact Us</h1>
+                    </div>
+                    <div class="map">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60446.600871383154!2d73.37052274812493!3d18.757442614469237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be801098bdf8145%3A0x696b4a60a5e28658!2sLonavala%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1722973700004!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="socialHandles">
+                        <a href="https://wa.me/919529496346"><i class="ri-whatsapp-fill"></i></a>
+                        <a href="https://www.instagram.com/lonavala_holiday_homes_3?igsh=MW92NHhzOHFremNreQ=="><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.facebook.com/Holiday.Homes.Lonavala33?mibextid=ZbWKwL"><i class="ri-facebook-fill"></i></a>
+                    </div>
+                    </div>
+                <div class="addressSection">
+                    <div class="phoneEmail">
+                        <h3>+91 <span>9529496346</span></h3>
+                    <a href="https://mail.google.com/mail " target="_blank">    <h4>lonavalaholidayhomes33@gmail.com</h4></a>
+                    </div>
+                    <div class="locationAdress">
+                        <p>
+                            <i class="ri-map-pin-fill"></i> Old Khandala Road, Lonavala Pune - 410401
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="contactFooter">
+                <div class="copyRight">
+                    <p class="copyPara">Copyright <i class="ri-copyright-line"></i> 2024 <span> Lonavala Holiday Homes </span></p>
+                    <div class="footerlinks">
+                        <a href="#home">Home</a>
+                        <a href="#villa">Villas</a>
+                    </div>
+                    <div class="devlopedby">
+                        <p>Developed by <a href="https://www.linkedin.com/in/ayush-ransingh-105a502a4/" target="_blank" >Ayush</a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
